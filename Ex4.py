@@ -13,6 +13,7 @@ def main():
     os.system("ffmpeg -i Resistencia_BM19.mp4 -ac 1 Resistencia_BM19_mono.mp4")
     print(f"Convertido correctamente!")
 
+    #NO FUNCIONA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     '''
     print(f"Genial! Ahora selecciona el codec de audio que desee:")
     print(f"...........................................")
