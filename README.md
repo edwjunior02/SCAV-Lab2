@@ -105,7 +105,7 @@ Y cada script contiene una llamada a su vez al método ```main()```del script pr
 Esta opción volverá a pedir si se desea finalmente salir del programa que: 
 ```
 En caso negativo, se llamará de nuevo al menú (bucle while) i volveremos a empezar.
-En caso afirmativo, se llamará a ```sys.exit()```que cerrara por completo el programa.
+En caso afirmativo, se llamará a sys.exit() que cerrara por completo el programa.
 ````
 Eso es todo. 
 Muchas gracias y disfruten del programa 😆
