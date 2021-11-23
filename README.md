@@ -82,7 +82,34 @@ os.system("ffmpeg -i Resistencia_BM19_cropped.mp4 -vf scale=____:____ videos/[72
 La parte mas importante de la línea de código anterior, es la parte del ```-vf scale=____:_____```, que es la que se encarga de cambiar la resolución del video.
 Si por ejemplo, el usuario seleccionara la opción ```1. 720p:```el comando ffmpeg correspondiente sería ```-vf scale=1280:720```.
 
-## EJERCICIO 4: 
+## EJERCICIO 4: DE ESTÉREO A MONO
+Este script, básicamente nos cambia los canales de audio de nuestro video (estéreo) y los agrupa en uno solo (mono). Para ello utiliza la siguiente comanda:
+```ruby
+os.system("ffmpeg -i Resistencia_BM19.mp4 -ac 1 Resistencia_BM19_mono.mp4")
+```
+En el que podemos ver que bloque de código que genera este cambio es ```-ac 1```, que nos contrae el audio en un único canal de salida.
+
+## MENÚ PRINCIPAL (MAIN)
+Y por último pero no menos importante, tenemos un último script llamado ```main.py```, que básicamente tiene un menú interactivo en el que se plantean todas las opciones posibles para ejecutar el programa. En la siguiente imagen podemos ver el menú que aparece por consola:
+
+![Captura de pantalla 2021-11-23 a las 23 57 13](https://user-images.githubusercontent.com/91899380/143142020-ec36583e-6612-4834-ae3f-0e43ad0148f7.png)
+
+Las decisiones se valoran en un bucle ```while``` donde dependiendo de la opción tomada por el usuario se llama al script correspondiente.
+```ruby
+while aux == 0:
+    if ex == '1':
+        import Ex1
+        Ex1.main()
+```
+Y cada script contiene una llamada a su vez al método ```main()```del script principal ```main.py```, de manera que se llama recursivamente a este menú hasta que se elija la opción ```5. Salir del programa:```.
+Esta opción volverá a pedir si se desea finalmente salir del programa que: 
+```
+En caso negativo, se llamará de nuevo al menú (bucle while) i volveremos a empezar.
+En caso afirmativo, se llamará a ```sys.exit()```que cerrara por completo el programa.
+````
+Eso es todo. 
+Muchas gracias y disfruten del programa 😆
+
 
 
 
