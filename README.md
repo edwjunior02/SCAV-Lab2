@@ -2,6 +2,8 @@
 
 En este repositorio encontraremos varios scripts en Python que realizan diferentes funciones acorde al enunciado de la práctica 2 de Sistemas de Codificación de Audio y Video (SCAV). 🐥
 
+https://github.com/edwjunior02/SCAV-Lab2.git - LINK 
+
 ## EJERCICIO 1:  Cortar N segundos de un video.
 Para este ejercicio tomaremos el script llamado Ex1.py y el video Resistencia_BM19.mp4 adjunto en el repositorio.
 Este script esta dividido en dos métodos principales:
