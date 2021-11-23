@@ -9,7 +9,7 @@ def main_Nseconds():
         remove('Resistencia_BM19_cropped.mp4')
 
     # Comenzemos con el ejercicio
-    print(f"Bienvenido al ejercicio 1 del lab 2 de Sistemas de Codificación de Audio y Video.")
+    print(f"¡Bienvenido al ejercicio 1 del lab 2 de Sistemas de Codificación de Audio y Video! \U0001F61C")
     print(f"En este ejercicio vamos a proceder a recortar un video en N segundos")
     print(f"IMPORTANTE: EL VIDEO SOLO DURA 04:28 min.")
     N = input(f"Por favor, introduce la cantidad N de segundos del principio del video que quieres recortar:")
@@ -95,6 +95,18 @@ def extract_time(string):
     #Convertimos a string el resultado final
     output = ("0"+str(hour)+":0"+str(minute)+":"+str(second))
     return output
+def main():
+    main_Nseconds()
+    print(f"Quiere mejorar el resultado?[y/n]")
+    resp = input()
+    if resp == 'y':
+        main_improved()
+        import main
+        main.lab2_main()
+    else:
+        import main
+        main.lab2_main()
 
-main_Nseconds()
-main_improved()
+main()
+
+
