@@ -59,7 +59,7 @@ def main_improved():
             print(f"\U0001F37A", end="")
             i = i + 1
             time.sleep(0.2)
-        str2_out = ("ffmpeg -i Resistencia_BM19.mp4 -map 0 -default_mode infer_no_subs -ss " + str(
+        str2_out = ("ffmpeg -i Resistencia_BM19.mp4 -ss " + str(
             init) + " -to " + str(
             out) + " -c copy Resistencia_BM19_cropped_2.mp4")
         os.system(str2_out)
